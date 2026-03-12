@@ -1,0 +1,20 @@
+[project]
+name = "web-search"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "fastapi>=0.115.12",
+    "openai>=1.68.2",
+    "playwright>=1.52.0",
+    "pydantic>=2.11.1",
+    "python-dotenv>=1.0.1",
+    "readability-lxml>=0.8.1",
+    "requests>=2.32.3",
+    "selenium>=4.29.0",
+    "sentence-transformers>=3.4.1",
+    "trafilatura>=1.12.2",
+    "uvicorn>=0.34.0",
+]

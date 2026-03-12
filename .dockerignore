@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.git
+.gitignore
+.python-version
+.venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
