@@ -27,6 +27,10 @@ COPY pyproject.toml README.md ./
 COPY fetch_content.py main.py query_expansion.py search_retrieval.py url_reranking.py ./
 
 RUN pip install --no-cache-dir setuptools wheel \
+    && pip install --no-cache-dir \
+        --index-url https://download.pytorch.org/whl/cpu \
+        --extra-index-url https://pypi.org/simple \
+        torch \
     && pip install --no-cache-dir --no-build-isolation .
 
 RUN python -m playwright install --with-deps chromium
