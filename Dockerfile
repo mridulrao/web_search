@@ -26,8 +26,7 @@ RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/v${GECKODR
 COPY pyproject.toml README.md ./
 COPY fetch_content.py main.py query_expansion.py search_retrieval.py url_reranking.py ./
 
-RUN pip install --upgrade pip \
-    && pip install .
+RUN pip install --no-build-isolation .
 
 RUN python -m playwright install --with-deps chromium
 

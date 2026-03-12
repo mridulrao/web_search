@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "web-search"
 version = "0.1.0"
@@ -17,4 +21,13 @@ dependencies = [
     "sentence-transformers>=3.4.1",
     "trafilatura>=1.12.2",
     "uvicorn>=0.34.0",
+]
+
+[tool.setuptools]
+py-modules = [
+    "main",
+    "fetch_content",
+    "query_expansion",
+    "search_retrieval",
+    "url_reranking",
 ]
